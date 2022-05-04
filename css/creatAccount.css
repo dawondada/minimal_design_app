@@ -1,0 +1,30 @@
+@import url(reset.css);
+/*  main.css  */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+*{-webkit-text-size-adjust: none;}
+body{font-size: 16px;font-family:'Noto Sans KR', sans-serif;; color: #53565b;}
+a{text-decoration: none;color: #53565b;}
+
+/*  layout  */
+#wrap{width:  375px;height: 812px;box-sizing: border-box;}
+    #header{width: 100%;}
+    .form_wrap{width: 100%;padding: 20px 20px 0;box-sizing: border-box;}
+
+/*  header  */
+.header_wrap{display: flex;flex-direction: row; width: 100%;height: 90px;padding-top: 37px; background: #ffe284;box-sizing: border-box;}
+h1{width: 95px;height: 36px;margin-left: 94px; font-size: 25px;font-weight: bold;letter-spacing: 0.68px;order: 2;}
+.header_wrap p{width: 30px;height: 30px;margin-left: 16px;}
+.header_wrap p a{display: block;font-size: 30px;line-height: 35px;color: #000;}
+
+/*  form  */
+.form_wrap > p{padding-right: 10px; font-size: 13px;letter-spacing: -0.88px;text-align: right;}
+.form_wrap > form div label{display: block;padding: 10px 0 5px; font-size: 14px; letter-spacing: -0.95px;}
+.form_wrap > form div input{width: 315px;height: 49px;margin-left: 10px; border: 1px solid #53565b; box-sizing: border-box;}
+.form_wrap > form div:first-of-type input,
+.form_wrap > form div:nth-of-type(5) input{width: 216px;}
+.form_wrap > form div button{width: 84px;height: 55px;margin-left: 10px; border: none; background: #000;font-size: 14px;color: #fff;letter-spacing: -0.95px;box-sizing: border-box; vertical-align: middle;cursor: pointer;}
+
+.creat{width: 319px;height: 55px;margin: 43px 0 0 8px;border-radius: 28px;background: #000;}
+.creat a{display: block;font-size: 18px;color: #fff;line-height: 55px;text-align: center;}

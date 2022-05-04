@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="apple-touch-icon-precomposed" href=".png"/>
+<link rel="apple-touch-startup-image" href=".png"/>
+<title>무료 나눔 상세</title>
+<script src="https://kit.fontawesome.com/e1d75e9736.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/board_free_inner.css " />
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="header_wrap">
+            <h1 class="logo">미완성</h1>
+            <p class="pagePrev"><a href="#"><i class="fa-solid fa-angle-left"></i></a></p>
+        </div>
+    </header>
+    <div class="container">
+        <p><span>&gt;</span> <a href="board_free1.html" title="무료나눔 게시판">무료 나눔</a></p>
+        <div class="inner">
+            <h2>제목 : &nbsp;&nbsp;인테리어 액자 나눔</h2>
+            <div class="img">
+                <p>대표</p>
+            </div>
+            <div class="img"></div>
+            <div class="txt">
+                <p>
+                    인테리어 액자 나눔합니다.<br />
+                    예쁘고 거의 깨끗한데 전체적인 집<br />
+                    컬러감이랑 안어울려서 무료로 나눔해요.<br />
+                    약간의 생활감 기스 있습니다.
+                </p>
+            </div>
+            <div>
+                <div class="reply">
+                    <a href="reply.html">
+                        <p>댓글달기</p>
+                    </a>
+                </div>
+                <div  class="good">
+                    <a href="#">
+                        <p>찜하기</p>
+                    </a>
+                </div>
+                <p class="apply"><a href="#">나눔신청</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const pageBack = document.querySelector(".pagePrev");
+console.log(pageBack);
+
+pageBack.addEventListener("click",function(){
+    history.go(-1);
+});
+    
+const good = document.querySelector(".good")  
+
+good.addEventListener("click",function(e){
+    e.preventDefault();
+    this.classList.toggle("on");
+});
+</script>
+</body>
+</html>

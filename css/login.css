@@ -1,0 +1,60 @@
+@import url(reset.css);
+/*  login.css  */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+*{-webkit-text-size-adjust: none;}
+body{font-size: 16px;font-family:'Noto Sans KR', sans-serif;; color: #53565b;}
+a{text-decoration: none;color: #53565b;}
+
+
+/*  layout  */
+#wrap{display: flex;flex-direction: column;width:  375px;height: 812px; background: #ffe284;box-sizing: border-box;}
+    h1{margin-bottom: 30px; padding: 112px 0 0 16px; width: 100%;font-size: 25px;font-weight: bold;letter-spacing: 0.68px;box-sizing: border-box;}
+    section:first-of-type{display: flex;flex-direction: column;justify-content: center;align-items: center;width: 100%;/*padding-left: 28px;*/ box-sizing: border-box;}
+    section:last-of-type{width: 100%;padding-top: 42px; background: #fff;}
+
+
+/*  section1  */
+form div input{width: 320px;height: 55px;margin:0 0 16px;padding-left: 40px; box-sizing: border-box;}
+form div input[type="checkbox"]{width: 15px;height: 15px;}
+input::placeholder{padding-left: 0px;font-size: 16px; color: #ccc;line-height: 55px;letter-spacing: 0.49px;}
+
+form div:nth-of-type(2){position: relative;}
+form div:nth-of-type(2) input{margin-bottom: 5px;}
+form div button{position: absolute;left: 15px;top: 50%;transform: translateY(-50%); border: none;background: transparent;}
+form div button i{font-size: 15px;cursor: pointer;}
+
+form div:nth-of-type(3){padding-left: 15px;}
+form div:nth-of-type(3) input{margin-bottom: px;}
+form div:nth-of-type(3) label{padding-left: 5px; font-size: 16px;color: #53565b;letter-spacing: -0.9px;}
+
+form div a{display: block;margin-bottom: 8px; width: 320px;height: 55px;border-radius: 27.5px;background: #000;font-size: 18px;color: #fff;letter-spacing: 2px;text-align: center; line-height: 55px;}
+
+.findAccout{display: flex; width: 160px;height: 24px;margin:0 auto 8px;}
+.findAccout p a{font-size: 14px;border-bottom: 1px solid #53565b;letter-spacing: -0.95px;transition: color 0.4s linear 0s;}
+.findAccout p:hover a{color: #000;}
+
+/* section2   */
+section:last-of-type h2{font-size: 18px;font-weight: bold;margin-left: 16px;}
+section:last-of-type ul{display: flex;flex-direction: row;justify-content: center;padding: 33px 0 113px;}
+section:last-of-type ul li{margin-left: 15px;}
+section:last-of-type ul li a{display: block;width: 60px;height: 60px;border-radius: 18px;text-indent: -9999px;overflow: hidden;}
+section:last-of-type ul li:nth-of-type(1) a{margin-left: 0; background: url(../images/Naver_logo.png) no-repeat center center/cover;}
+section:last-of-type ul li:nth-of-type(2) a{background: url(../images/KakaoTalk_logo.png) no-repeat center center/cover;}
+section:last-of-type ul li:nth-of-type(3) a{background: url(../images/Facebook_logo.png) no-repeat center center/cover;}
+section:last-of-type ul li:nth-of-type(4) a{background: url(../images/Google_logo.png) no-repeat center center/cover;}
+
+section:last-of-type p{width: 121px;height: 19px;margin: 0 auto; font-size: 13px;letter-spacing: -0.88px;animation: ani1 2s linear 0s infinite;}
+section:last-of-type div{width: 167px;height: 20px;margin:5px auto 56px;}
+section:last-of-type div a{display: block;position: relative;font-size: 14px;background: url(../images/icon_more.png) no-repeat 100% 50%;transition: all 0.4s linear 0s;}
+section:last-of-type div a:hover{color: #000;font-weight: 500;}
+section:last-of-type div a:after{content: "";display: block;position: absolute;width: 0;height: 1px;background: #53565b;transition: width 0.4s linear 0s;}
+section:last-of-type div a:hover:after{width: 162px;}
+
+@keyframes ani1{
+    0%{color: #53565b;opacity: .5;}
+    40%{color: #000;}
+    70%{color: #53565b;opacity: 0.5;}
+    100%{color: #53565b;}
+}

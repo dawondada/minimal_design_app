@@ -1,0 +1,71 @@
+@import url(reset.css);
+/*  main.css  */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+*{-webkit-text-size-adjust: none;}
+body{font-size: 16px;font-family:'Noto Sans KR', sans-serif;; color: #53565b;}
+a{text-decoration: none;color: #53565b;}
+
+/*  layout  */
+#wrap{position: relative; width: 375px;height: 812px;box-sizing: border-box; }
+    #header{width: 100%;height: 90px;padding-top: 44px; background: #ffe284;box-sizing: border-box;}
+    .container{width: 100%;height: 722px; padding: 0 16px; background: #f2f2f2;box-sizing: border-box;}
+    
+
+/*  header  */
+.header_wrap{display: flex;}
+h1.logo{width: 51px;height: 35px;margin-left: 118px; background: url(../images/logo_s.png) no-repeat center center/contain; text-indent: -9999px;overflow: hidden;order: 1;}
+.pagePrev{margin:5px 0 0 16px;}
+.pagePrev a{display: block;width: 28px;height: 26px; font-size: 28px; color: #000;line-height: 28px;}
+
+
+
+/*  container  */
+.container > p{padding: 28px 0 15px 0;font-size: 13px;}
+.container > p > span{padding-right: 10px; font-size: 14px; font-weight: bold;}
+.container > p > a{display: inline-block;}
+
+.container > div.inner{width: 343px;height: 640px;padding: 12px 16px 0; background: #fff; box-sizing: border-box;opacity: 0;animation: ani1 1s linear 0.2s forwards;}
+.inner > h2{padding-bottom:5px; letter-spacing: -1.09px;border-bottom: 1px solid #c4c4c4;box-sizing: border-box;}
+
+.inner > div.img{width: 313px;height: 184px;box-sizing: border-box;}
+.inner > div.img:nth-of-type(1){position: relative; margin:24px 0 16px ; background: url(../images/free_in1.jpg) no-repeat center center/cover;} 
+.inner > div.img:nth-of-type(1) > p{position: absolute;top: 9px;left: 9px; width: 40px;height: 24px;border-radius: 8px;border: 1px solid #000;background: #fff;font-size: 13px;letter-spacing: -0.88px;text-align: center;line-height: 24px;}
+.inner > div.img:nth-of-type(2){background: url(../images/free_in2.png) no-repeat center center/cover;} 
+
+.inner > div.txt{width: 100%;padding: 16px 16px 20px; box-sizing: border-box;}
+div.txt > p{letter-spacing: -1.9px;}
+
+.inner > div:last-of-type{display: flex;width: 100%;height: 48px;}
+.reply{width: 60px;height: 48px;margin-right: 28px; background: url(../images/icon_chat_ing.png) no-repeat 50% 0;animation: ani2 2s linear 0s infinite;}
+.reply a{display: block;width: 100%;height: 100%;box-sizing: border-box;}
+.reply p{width: 100%;height: 18px;padding-top: 30px;font-size: 13px;letter-spacing: -0.88px;text-align: center;}
+
+.good{width: 60px;height: 48px;margin-right: 28px; background: url(../images/icon_heart.png) no-repeat 50% -5px;animation: ani3 2s linear 0s infinite;}
+.good a{display: block;width: 100%;height: 100%;box-sizing: border-box;}
+.good p{width: 100%;height: 18px;padding-top: 30px;font-size: 13px;letter-spacing: -0.88px;text-align: center;}
+.good.on{background:url(../images/icon_heart_on.png) no-repeat 50% -5px;;}
+
+.apply{width: 135px;height: 48px;border-radius: 10px;background: #ffe284;}
+.apply a{display: inline-block;width: 100%;height: 100%;font-size: 14px;color: #000;letter-spacing:-0.95px;line-height: 48px;text-align: center;}
+
+
+@keyframes ani1 {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes ani2 {
+    0%{transform: rotateY(0);}
+    30%{transform: rotateY(-30deg);}
+    60%{transform: rotateY(30deg);}
+    100%{transform: rotateY(0);}
+}
+
+@keyframes ani3 {
+    0%{transform: rotate(0);}
+    30%{transform: rotate(-5deg);}
+    60%{transform: rotate(5deg);}
+    100%{transform: rotate(0);}
+}

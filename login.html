@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="apple-touch-icon-precomposed" href=".png"/>
+<link rel="apple-touch-startup-image" href=".png"/>
+<title>로그인</title>
+<script src="https://kit.fontawesome.com/e1d75e9736.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+<div id="wrap">
+    <h1>로그인</h1>
+    <section>
+        <h2 class="blind">로그인</h2>
+        <div class="login_form">
+            <form action="" method="post" >
+                <fieldset>
+                    <legend class="blind">로그인폼</legend>
+                        <div>
+                            <label for="userId" class="blind">아이디</label>
+                            <input type="text" id="userId" title="아이디" required placeholder="아이디를 입력하세요" />
+                        </div>
+                        <div>
+                            <label for="userPin" class="blind">비밀번호</label>
+                            <input type="password" id="userPin" title="비밀번호" required placeholder="비밀번호를 입력하세요" />
+                            <button type="button"><i class="fa-solid fa-lock"></i></button>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="keepLogin"/>
+                            <label for="keepLogin">로그인 상태 유지하기</label>
+                        </div>
+                        <div>
+                            <a href="main.html">로그인</a>
+                        </div>
+                </fieldset>
+            </form>
+        </div>
+        <div class="findAccout">
+            <p class="find_id"><a href="findAccount.html">아이디찾기</a>&nbsp;/</p>
+            <p class="find_pw">&nbsp;<a href="findAccount.html">비밀번호 찾기</a></p>
+        </div>
+    </section>
+    <section>
+        <h2>간편로그인</h2>
+        <ul>
+            <li><a href="#">네이버</a></li>
+            <li><a href="#">카카오톡</a></li>
+            <li><a href="#">페이스북</a></li>
+            <li><a href="#">구글</a></li>
+        </ul>
+        <p>아직 계정이 없으신가요?</p>
+        <div>
+            <a href="creatAccount.html">회원가입하러 가기</a>
+        </div>
+    </section>
+</div>
+</body>
+</html>

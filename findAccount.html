@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="apple-touch-icon-precomposed" href=".png"/>
+<link rel="apple-touch-startup-image" href=".png"/>
+<title>아이디 비밀번호 찾기</title>
+<script src="https://kit.fontawesome.com/e1d75e9736.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/findAccount.css" />
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="header_wrap">
+            <h1>계정 찾기</h1>
+            <p class="pagePrev"><a href="#"><i class="fa-solid fa-angle-left"></i></a></p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container_inner">
+            <ul>
+                <li class="findId on"><a href="#">아이디 찾기</a>
+                        <div class="id_wrap">
+                        <form action="" method="post" >
+                            <fieldset>
+                                <legend class="blind">아이디찾기 폼</legend>   
+                                    <div>
+                                        <label for="idName">이름</label>
+                                        <input type="text" id="idName" required title="이름"/>
+                                    </div>
+                                    <div>
+                                        <label for="idMail">이메일</label>
+                                        <input type="email" id="idMail" required placeholder="가입된 이메일을 입력해 주세요" title="이메일 주소"/>
+                                        <button type="button">인증번호 보내기</button>
+                                    </div>
+                                    <div>
+                                        <label for="idCode">인증번호</label>
+                                        <input type="text" id="idCode" required maxlength="8" placeholder="인증번호를 입력해 주세요" title="인증번호" />
+                                    </div>
+                                    <div>
+                                        <a href="#">아이디 찾기</a>
+                                    </div>
+                            </fieldset>
+                        </form>
+                        </div>
+                </li>
+                <li class="findPw"><a href="#">비밀번호 찾기</a>
+                    <div class="pw_wrap">
+                        <form action="" method="post" >
+                            <fieldset>
+                                <legend class="blind">비밀번호 찾기 폼</legend>   
+                                    <div>
+                                        <label for="pwName">이름</label>
+                                        <input type="text" id="pwName" required title="이름"/>
+                                    </div>
+                                    <div>
+                                        <label for="pwMail">이메일</label>
+                                        <input type="email" id="pwMail" required placeholder="가입된 이메일을 입력해 주세요" title="이메일 주소"/>
+                                        <button type="button">인증번호 보내기</button>
+                                    </div>
+                                    <div>
+                                        <label for="pwCode">인증번호</label>
+                                        <input type="text" id="pwCode" required maxlength="8" placeholder="인증번호를 입력해 주세요" title="인증번호"/>
+                                    </div>
+                                    <div>
+                                        <a href="#">비밀번호 찾기</a>
+                                    </div>
+                            </fieldset>
+                        </form>
+                        </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+
+const pageBack = document.querySelector(".pagePrev");
+console.log(pageBack);
+
+pageBack.addEventListener("click",function(){
+    history.go(-1);
+});
+  
+const findId = document.querySelector(".findId");
+const findPw = document.querySelector(".findPw");
+
+findId.addEventListener("click",function(e){
+    e.preventDefault();
+    this.classList.add("on");
+    findPw.classList.remove("on");
+});
+findPw.addEventListener("click",function(e){
+    e.preventDefault();
+    this.classList.add("on");
+    findId.classList.remove("on");
+});
+
+</script>
+</body>
+</html>

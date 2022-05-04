@@ -1,0 +1,32 @@
+@import url(reset.css);
+/*  main.css  */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+*{-webkit-text-size-adjust: none;}
+body{font-size: 16px;font-family:'Noto Sans KR', sans-serif;; color: #53565b;}
+a{text-decoration: none;color: #53565b;}
+
+/*  layout  */
+#wrap{position: relative; width: 375px;height: 812px;box-sizing: border-box;}
+    #header{width: 100%;}
+    .content{width: 100%;}
+
+
+.header_wrap{display: flex;flex-direction: row; width: 100%;height: 90px;padding-top: 37px; background: #ffe284;box-sizing: border-box;}
+h1{width: 95px;height: 36px;margin-left: 94px; font-size: 25px;font-weight: bold;letter-spacing: 0.68px;order: 2;}
+.header_wrap p{width: 30px;height: 30px;margin-left: 16px;}
+.header_wrap p a{display: block;font-size: 30px;line-height: 35px;color: #000;}
+#map {
+    height: 722px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+.addr{z-index: 10; position: absolute;bottom: 20px; width: 339px;height: 210px;margin-left: 18px; padding: 27px 23px; background: #fff;border-radius: 16px; box-sizing: border-box;box-shadow: 0 3px 6px 0 #ccc;}
+.addr > address{font-size: 13px;letter-spacing: -0.88px;}
+.addr > address > p{display: inline-block;padding-left: 13px; vertical-align: top;}
+.addr > p{font-size: 13px;margin-top: 10px;letter-spacing: -0.88px;}
+.addr > p:last-of-type{padding-left: 23px;}
+.addr > p > span{padding-left: 10px;}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="apple-touch-icon-precomposed" href=".png"/>
+<link rel="apple-touch-startup-image" href=".png"/>
+<title>1:1 문의</title>
+<script src="https://kit.fontawesome.com/e1d75e9736.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/chat.css" />
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="header_wrap">
+            <h1>1:1 문의</h1>
+            <p class="pagePrev"><a href="#"><i class="fa-solid fa-angle-left"></i></a></p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="chat_inner">
+            <div class="bot">
+                <p class="img"></p>
+                <P>
+                    <span>
+                        안녕하세요.mini123고객님<br />
+                        미완성 상담센터입니다.
+                    </span>
+                </P>
+            </div>
+            <div class="user">
+                <p><span>안녕하세요.</span></p>
+                <p><span>
+                    다름이 아니고,<br />
+                    이번 이벤트 관련해서<br />
+                    문의하려고 하는데요
+                </span></p>
+                <p><span>리뷰이벤트</span></p>
+            </div>
+            <div class="bot">
+                <p class="img"></p>
+                <p>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                </p>
+            </div>
+        </div>
+        <div class="typing">
+            <form action="" method="post">
+                <fieldset>
+                    <legend class="blind">채팅창</legend>
+                    <div>
+                        <label for="find"></label>
+                        <input type="file" id="find" />
+                        <label for="typing" class="blind">키보드창</label>
+                        <input type="text" id="typing"/>
+                        <input type="submit" title="전송"/>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>  
+
+<script>
+const pageBack = document.querySelector(".pagePrev");
+console.log(pageBack);
+
+pageBack.addEventListener("click",function(){
+    history.go(-1);
+});
+
+</script>
+</body>
+</html>

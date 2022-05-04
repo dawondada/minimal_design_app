@@ -1,0 +1,73 @@
+@import url(reset.css);
+/*  main.css  */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+*{-webkit-text-size-adjust: none;}
+body{font-size: 16px;font-family:'Noto Sans KR', sans-serif;; color: #53565b;}
+a{text-decoration: none;color: #53565b;}
+
+/*  layout  */
+#wrap{width:  375px;height: 812px;box-sizing: border-box;}
+    #header{width: 100%;}
+   .container{width: 100%;height: 722px;padding: 0 16px; box-sizing: border-box;}
+
+/*  header  */
+.header_wrap{display: flex;flex-direction: row; width: 100%;height: 90px;padding-top: 37px; background: #ffe284;box-sizing: border-box;}
+h1{width: 95px;height: 36px;margin-left: 94px; font-size: 25px;font-weight: bold;letter-spacing: 0.68px;order: 2;}
+.header_wrap p{width: 30px;height: 30px;margin-left: 16px;}
+.header_wrap p a{display: block;font-size: 30px;line-height: 35px;color: #000;}
+
+/*  container  */
+.container > div{width: 343px;}
+.container > div:nth-of-type(1) > h3{animation: ani1 0.4s linear 0.2s forwards;}
+.container > div:nth-of-type(2) > h3{animation: ani1 0.4s linear 1.2s forwards;}
+.container > div:nth-of-type(3) > h3{animation: ani1 0.4s linear 2.6s forwards;}
+.container > div > h3{margin: 30px 0 25px; font-size: 18px;font-weight: bold;letter-spacing: -1.22px;opacity: 0;}
+.container > div > ul{display: flex;flex-wrap: wrap;margin-left: 19px;}
+.container > div > ul > li{margin:0 21px 7px 0; opacity: 0;}
+.container > div > ul > li > a{display: block;width: 87px;height: 83px;border-radius: 28px;text-indent: -9999px;overflow: hidden;}
+.container > div > ul > li:nth-of-type(3),
+.container > div > ul > li:nth-of-type(6){margin-right: 0;}
+
+.container > .family > ul > li:nth-of-type(1) > a{background: url(../images/category_one.png);}
+.container > .family > ul > li:nth-of-type(2) > a{background: url(../images/category_two.png);}
+.container > .family > ul > li:nth-of-type(3) > a{background: url(../images/category_three.png);}
+
+.container > .house > ul > li:nth-of-type(1) > a{background: url(../images/category_studio.png);}
+.container > .house > ul > li:nth-of-type(2) > a{background: url(../images/category_tworoom.png);}
+.container > .house > ul > li:nth-of-type(3) > a{background: url(../images/category_multiple.png);}
+.container > .house > ul > li:nth-of-type(4) > a{background: url(../images/category_apt.png);}
+.container > .house > ul > li:nth-of-type(5) > a{background: url(../images/category_house.png);}
+.container > .house > ul > li:nth-of-type(6) > a{background: url(../images/category_office.png);}
+
+.container > .room > ul > li:nth-of-type(1) > a{background: url(../images/category_bed.png);}
+.container > .room > ul > li:nth-of-type(2) > a{background: url(../images/category_bath.png);}
+.container > .room > ul > li:nth-of-type(3) > a{background: url(../images/category_living.png);}
+.container > .room > ul > li:nth-of-type(4) > a{background: url(../images/category_utility.png);}
+.container > .room > ul > li:nth-of-type(5) > a{background: url(../images/category_kitchen.png);}
+.container > .room > ul > li:nth-of-type(6) > a{background: url(../images/category_closet.png);}
+
+.container > .family > ul > li:nth-of-type(1){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s forwards;}
+.container > .family > ul > li:nth-of-type(2){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.8s forwards;}
+.container > .family > ul > li:nth-of-type(3){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s forwards;}
+
+.container > .house > ul > li:nth-of-type(1){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.4s forwards;}
+.container > .house > ul > li:nth-of-type(2){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.6s forwards;}
+.container > .house > ul > li:nth-of-type(3){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.8s forwards;}
+.container > .house > ul > li:nth-of-type(4){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2s forwards;}
+.container > .house > ul > li:nth-of-type(5){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2.2s forwards;}
+.container > .house > ul > li:nth-of-type(6){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2.4s forwards;}
+
+.container > .room > ul > li:nth-of-type(1){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 2.8s forwards;}
+.container > .room > ul > li:nth-of-type(2){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3s forwards;}
+.container > .room > ul > li:nth-of-type(3){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3.2s forwards;}
+.container > .room > ul > li:nth-of-type(4){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3.4s forwards;}
+.container > .room > ul > li:nth-of-type(5){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3.6s forwards;}
+.container > .room > ul > li:nth-of-type(6){animation: ani1 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 3.8s forwards;}
+
+@keyframes ani1{
+    0%{transform: translateY(30px);opacity: 0;}
+    100%{transform: translateY(0);opacity: 1;}
+}
+

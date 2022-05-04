@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="apple-touch-icon-precomposed" href=".png"/>
+<link rel="apple-touch-startup-image" href=".png"/>
+<title>댓글</title>
+<script src="https://kit.fontawesome.com/e1d75e9736.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/reply.css" />
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="header_wrap">
+            <h1 class="logo">미완성</h1>
+            <p class="pagePrev"><a href="#"><i class="fa-solid fa-angle-left"></i></a></p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="reply_inner">
+            <div>
+                <p><a href="board_free_inner.html" title="인태리어 액자 나눔">인테리어 액자...</a>&gt;&nbsp;&nbsp;&nbsp;댓글</p>
+            </div>
+            <div class="form_inner">
+                <form action="" method="post">
+                    <fieldset>
+                        <legend class="blind">댓글쓰기</legend>
+                        <div>
+                            <label for="userReply" class="blind">댓글</label>
+                            <textarea id="userReply" cols="41" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" value="등록"/>
+                            <input type="reset" value="취소"/>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div>
+                <div class="img"></div>
+                <div class="text">
+                    <strong>고양이러버</strong>
+                    <p>
+                        예쁘네요~~ 그냥 나눔하시기<br />
+                        아쉬우실듯 ㅜㅜ
+                    </p>
+                    <p>2022.01.12<span><a href="#" title="댓글달기"></a></span> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+
+<script>
+    const pageBack = document.querySelector(".pagePrev");
+    console.log(pageBack);
+    
+    pageBack.addEventListener("click",function(){
+        history.go(-1);
+    });
+    
+</script>
+</body>
+</html>

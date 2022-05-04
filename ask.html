@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="apple-touch-icon-precomposed" href=".png"/>
+<link rel="apple-touch-startup-image" href=".png"/>
+<title>문의하기</title>
+<script src="https://kit.fontawesome.com/e1d75e9736.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/ask.css" />
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="header_wrap">
+            <h1>문의하기</h1>
+            <p class="pagePrev"><a href="#"><i class="fa-solid fa-angle-left"></i></a></p>
+        </div>
+    </header>
+    <div class="container">
+        <section>
+            <h2>자주찾는 질문</h2>
+            <ul>
+                <li class="delivery"><a href="#">배송관련 질문<span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                <li class="pay"><a href="#">결제관련 질문<span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                <li class="account"><a href="#">계정관련 질문<span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+                <li class="event"><a href="#">이벤트관련 질문<span><i class="fa-solid fa-chevron-right"></i></span></a></li>
+            </ul>
+        </section>
+        <section>
+            <h2>1:1 문의하기</h2>
+            <div>
+                <p><a href="#">메일 쓰기</a></p>
+                <p><a href="chat.html">1:1 상담톡</a></p>
+            </div>
+        </section>
+    </div>
+    <section class="control_bar">
+        <ul>
+            <li><a href="main.html">홈</a></li>
+            <li><a href="category.html">검색</a></li>
+            <li><a href="board.html">게시판</a></li>
+            <li><a href="mypage.html">마이페이지</a></li>
+        </ul>
+    </section>
+</div>  
+
+<script>
+    const pageBack = document.querySelector(".pagePrev");
+    console.log(pageBack);
+    
+    pageBack.addEventListener("click",function(){
+        history.go(-1);
+    });
+    
+</script>
+</body>
+</html>

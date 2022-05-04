@@ -1,0 +1,89 @@
+@import url(reset.css);
+/*  main.css  */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+*{-webkit-text-size-adjust: none;}
+body{font-size: 16px;font-family:'Noto Sans KR', sans-serif;; color: #53565b;}
+a{text-decoration: none;color: #53565b;}
+
+/*  layout  */
+#wrap{position: relative;width: 375px;height: 812px;perspective: 1500px; box-sizing: border-box; }
+    #header{width: 100%;}
+    .container{width: 100%;height: 722px;padding:20px 16px 0; background: #fff;box-sizing: border-box;}
+    .control_bar{position: fixed;top: 722px;left: 16px; width: 343px;height: 70px;z-index: 50; box-sizing: border-box;}
+
+/*  header  */
+.header_wrap{display: flex;flex-direction: row; width: 100%;height: 90px;padding-top: 37px; background: #ffe284;box-sizing: border-box;}
+h1{width: 150px;height: 36px;margin-left: 94px; font-size: 25px;font-weight: bold;letter-spacing: 0.68px;order: 2;}
+.header_wrap p{width: 30px;height: 30px;margin-left: 16px;}
+.header_wrap p a{display: block;font-size: 30px;line-height: 35px;color: #000;}
+
+/*  container  */
+section.profile{width: 343px;height: 210px;border: 1px solid #707070;border-radius: 21px;box-sizing: border-box;background: #f2f2f2;opacity: 0;transform-origin: center;animation: ani3 1.5s linear 0.5s forwards;}
+.profile > div:nth-of-type(1){display: flex; width: 300px;height: 80px;margin: 32px 0 20px 10px;}
+.profile > div:nth-of-type(1) > .img{width: 70px;height: 70px;margin-right: 13px; border-radius: 70px;border: 1px solid #707070; background: url(../images/profile.jpg) no-repeat center center/cover;}
+.profile > div:nth-of-type(1) > div:nth-of-type(2) p:nth-of-type(1){margin:5px 0 8px; font-size: 18px;font-weight: bold;letter-spacing: -1.22px;}
+.profile > div:nth-of-type(1) > div:nth-of-type(2) p:nth-of-type(2){font-size: 13px;letter-spacing: -0.88px;}
+.profile > div:nth-of-type(1) > div:nth-of-type(2) p:nth-of-type(3) > a{display: block; font-size: 13px;letter-spacing: -0.88px;}
+
+.profile > div:nth-of-type(2){position: relative;width: 307px;margin-left:18px;}
+.profile > div:nth-of-type(2) > p{position: absolute;z-index: 10;top: -20px;left: 10px; font-size: 14px;color: red;opacity: 0;animation: ani2 1s linear 4s infinite;}
+.profile > div:nth-of-type(2) ul{display: flex;}
+.profile > div:nth-of-type(2) ul li{width: 89px;height: 64px;margin-right: 21px;border-radius: 22px;}
+.profile > div:nth-of-type(2) ul li:last-of-type{margin-right:0;}
+.profile > div:nth-of-type(2) ul li a{display: block;position: relative;width: 89px;height: 64px;margin-right: 21px;border-radius: 22px;}
+.profile > div:nth-of-type(2) ul li a:hover{transform: scale(1.02);}
+.profile > div:nth-of-type(2) ul li a span{position: absolute;bottom: 0;height: 20px;font-size: 13px;letter-spacing: -0.88px;}
+
+.profile > div:nth-of-type(2) ul li:nth-of-type(1) a{background: #ffe284 url(../images/icon_my.png) no-repeat 50% 20%;}
+.profile > div:nth-of-type(2) ul li:nth-of-type(1) a span{left: 50%;width: 58px;border-radius: 22px;transform: translateX(-50%);}
+.profile > div:nth-of-type(2) ul li:nth-of-type(2) a{background: #ffe284 url(../images/icon_delivery.png) no-repeat 50% 20%;}
+.profile > div:nth-of-type(2) ul li:nth-of-type(2) a span{left: 50%;width: 45px;border-radius: 22px;transform: translateX(-50%);}
+.profile > div:nth-of-type(2) ul li:last-of-type a{margin-right:0;background: #ffe284 url(../images/icon_point.png) no-repeat 50% 20%;}
+.profile > div:nth-of-type(2) ul li:last-of-type a span{left: 50%;width: 34px;border-radius: 22px;transform: translateX(-50%);}
+
+.container > section:nth-of-type(2) > div{margin-top: 20px;}
+.container > section:nth-of-type(2) > div h2{margin-bottom: 11px; font-size: 18px;font-weight: bold; letter-spacing: -1.22px;opacity: 0;}
+.container > section:nth-of-type(2) > div:nth-of-type(1) h2{animation: ani1 0.4s ease-in-out 2.4s forwards;}
+.container > section:nth-of-type(2) > div:nth-of-type(2) h2{animation: ani1 0.4s ease-in-out 2.8s forwards;}
+.container > section:nth-of-type(2) > div ul li{width: 303px;margin-left: 20px;padding: 5px 0 10px;border-bottom: 1px solid #b2b2b2;opacity: 0;}
+.container > section:nth-of-type(2) > div:nth-of-type(1) ul li{animation: ani2 0.3s linear 2.7s forwards;}
+.container > section:nth-of-type(2) > div:nth-of-type(2) ul li{animation: ani2 0.3s linear 3s forwards;}
+.container > section:nth-of-type(2) > div ul li a{display: block; font-size: 16px;letter-spacing: -1.09px;}
+.container > section:nth-of-type(2) > div:last-of-type ul li:nth-of-type(2) a,
+.container > section:nth-of-type(2) > div:last-of-type ul li:last-of-type a{opacity: 0;animation: ani2 2s linear 3.5s infinite;}
+
+.container > a{display: block;width: 51px;height: 20px;margin: 18px 0 0 146px; border-bottom: 1px solid #000; font-size: 13px;letter-spacing: -0.88px;text-align: center;opacity: 0;animation: ani2 0.3s linear 3.5s forwards;transition: all 0.3s linear 0s;}
+.container > a:hover{font-weight: 600;}
+
+/*  control_bar  */
+.control_bar > ul{width: 100%;height: 100%;border-radius: 35px;background: #ffe284;box-sizing: border-box;opacity: 0;animation: ani1 0.4s linear 3.2s forwards;}
+.control_bar ul{display: flex;padding: 10px 39px;}
+.control_bar ul li{margin-right: 20px;}
+.control_bar ul li:last-of-type{margin-right: 0;}
+.control_bar ul li a{display: block;width: 50px;height: 45px;text-indent: -9999px;overflow: hidden;transition: all 0.4s linear 0s }
+.control_bar ul li:nth-of-type(1) a{background: url(../images/icon_home.png) no-repeat 0 0;}
+.control_bar ul li:nth-of-type(2) a{background: url(../images/icon_srch_w.png) no-repeat 0 0;}
+.control_bar ul li:nth-of-type(3) a{background: url(../images/icon_board.png) no-repeat 0 0;}
+.control_bar ul li:nth-of-type(4) a{background: url(../images/icon_mypage.png) no-repeat 0 0;}
+
+.control_bar ul li:nth-of-type(1):hover a{background: url(../images/icon_home_b.png) no-repeat 0 0;}
+.control_bar ul li:nth-of-type(2):hover a{background: url(../images/icon_srch_bb.png) no-repeat 0 0;}
+.control_bar ul li:nth-of-type(3):hover a{background: url(../images/icon_board_b.png) no-repeat 0 0;}
+.control_bar ul li:nth-of-type(4):hover a{background: url(../images/icon_mypage_b.png) no-repeat 0 0;}
+
+@keyframes  ani1{
+    0%{transform: translateY(20px);opacity: 0;}
+    100%{transform: translateY(0);opacity: 1;}
+}
+
+@keyframes ani2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes ani3{
+    0%{transform: rotateY(-270deg);opacity: 0;}
+    100%{transform: rotateY(0);opacity: 1;}
+}

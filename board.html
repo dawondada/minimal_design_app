@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="apple-touch-icon-precomposed" href=".png"/>
+<link rel="apple-touch-startup-image" href=".png"/>
+<title>게시판</title>
+<script src="https://kit.fontawesome.com/e1d75e9736.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/board.css" />
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="header_wrap">
+            <h1>게시판</h1>
+            <p class="pagePrev"><a href="#"><i class="fa-solid fa-angle-left"></i></a></p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="notice"><a href="#">공지사항<span><i class="fa-solid fa-chevron-right"></i></span></a></div>
+        <div class="community"><a href="community.html">자유게시판<span><i class="fa-solid fa-chevron-right"></i></span></a></div>
+        <div class="free_market"><a href="board_free1.html">무료 나눔<span><i class="fa-solid fa-chevron-right"></i></span></a></div>
+        <div class="secondhand"><a href="#">중고장터<span><i class="fa-solid fa-chevron-right"></i></span></a></div>
+    </div>
+    <section class="control_bar">
+        <ul>
+            <li><a href="main.html">홈</a></li>
+            <li><a href="category.html">검색</a></li>
+            <li><a href="board.html">게시판</a></li>
+            <li><a href="mypage.html">마이페이지</a></li>
+        </ul>
+    </section>
+</div>  
+
+<script>
+    const pageBack = document.querySelector(".pagePrev");
+    console.log(pageBack);
+    
+    pageBack.addEventListener("click",function(){
+        history.go(-1);
+    });
+    
+</script> 
+</body>
+</html>

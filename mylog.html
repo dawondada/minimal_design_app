@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="apple-touch-icon-precomposed" href=".png"/>
+<link rel="apple-touch-startup-image" href=".png"/>
+<title>나의 게시물</title>
+<script src="https://kit.fontawesome.com/e1d75e9736.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/mylog.css" />
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="header_wrap">
+            <h1>나의 게시물</h1>
+            <p class="pagePrev"><a href="#"><i class="fa-solid fa-angle-left"></i></a></p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container_inner">
+            <h2 class="blind">인테리어 게시물</h2>
+            <ul>
+                <li class="interior on"><a href="#">인테리어</a>
+                    <div>
+                        <article>
+                            <div class="img">
+                                <ul>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                            <div class="text">
+                                <p><a href="#"># 셀프 작업방 인테리어</a><br />
+                                모노톤으로 깔끔하고 미니멀한 느낌</p>
+                                <span>2022.01.12</span>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="img">
+                                <ul>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                            <div class="text">
+                                <h3>중고거래 리뷰~!</h3>
+                                <p>
+                                    중고거래로 구한 물건들로 꾸몄는데,<br />
+                                    평소에 안 사본 스타일이라 좀 생소한거 같기도?<br />
+                                    ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ<br />
+                                    램프랑 그릇이랑 화분이랑 다 난색 계열이라<br />
+                                    따뜻해보이고 넘 예쁘다 만족~~ ^ㅇ^)bb
+                                </p>
+                                <span>2022.01.06</span>
+                            </div>
+                        </article>
+                    </div>
+                </li>
+                <li class="board"><a href="#">게시글</a>
+                    <h2 class="blind">게시글</h2>
+                    <div>
+                        <article>
+                            <P><a href="#">게시판</a>&nbsp;&gt;&nbsp;<a href="#">자유게시판</a>&nbsp;&gt;&nbsp;잡담</P>
+                            <p>
+                                재택근무하면서 인테리어 중요성을 알았어요ㅠ<br />
+                                아오~~ 방에만 있으려니 죽을맛이더라구요 ㅡㅜ<br />
+                                통근에서 벗어난건 좋지만 공간 분리가 안되니까<br />
+                                퇴근한 기분도 안나구ㅜㅠ
+                            </p>
+                            <span>2022.01.06</span>
+                        </article>
+                    </div>
+                </li>
+                <li class="reply"><a href="#">댓글</a>
+                    <h2 class="blind">댓글</h2>
+                    <div>
+                        <div>
+                            <p>아직 댓글이 없어요(ㅜ_ㅜ)</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section class="control_bar">
+        <ul>
+            <li><a href="main.html">홈</a></li>
+            <li><a href="category.html">검색</a></li>
+            <li><a href="board.html">게시판</a></li>
+            <li><a href="mypage.html">마이페이지</a></li>
+        </ul>
+    </section>
+    <div class="btn_write"><a href="write.html">글쓰기</a></div>
+</div>  
+
+<script>
+
+const pageBack = document.querySelector(".pagePrev");
+console.log(pageBack);
+
+pageBack.addEventListener("click",function(){
+    history.go(-1);
+});
+    
+const interiorLi = document.querySelector(".interior");
+const boardLi = document.querySelector(".board");
+const replyLi = document.querySelector(".reply");
+
+interiorLi.addEventListener("click",function(e){
+    e.preventDefault();
+    this.classList.add("on");
+    boardLi.classList.remove("on");
+    replyLi.classList.remove("on");
+});
+boardLi.addEventListener("click",function(e){
+    e.preventDefault();
+    this.classList.add("on");
+    interiorLi.classList.remove("on");
+    replyLi.classList.remove("on");
+});
+replyLi.addEventListener("click",function(e){
+    e.preventDefault();
+    this.classList.add("on");
+    interiorLi.classList.remove("on");
+    boardLi.classList.remove("on");
+});
+
+
+
+
+</script> 
+</body>
+</html>

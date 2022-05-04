@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<link rel="apple-touch-icon-precomposed" href=".png"/>
+<link rel="apple-touch-startup-image" href=".png"/>
+<title>회사소개</title>
+<script src="https://kit.fontawesome.com/e1d75e9736.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/map.css" />
+</head>
+<body>
+<div id="wrap">
+    <header id="header">
+        <div class="header_wrap">
+            <h1>회사소개</h1>
+            <p class="pagePrev"><a href="#"><i class="fa-solid fa-angle-left"></i></a></p>
+        </div>
+    </header>
+    <div class="content">
+        <section class="Gmap">
+            <div id="map"></div>
+            <script>
+                let map;
+
+                function initMap() {
+                    var addr = {lat: 37.54395851022625, lng: 127.06420438892725}
+                    map = new google.maps.Map(document.getElementById("map"),{
+                        center: addr,
+                        zoom:15,
+                    });
+                    var maker = new google.maps.Marker({
+                        position : addr,
+                        map : map,
+                        title:"서울특별시 성동구 성수 2가 3동"
+                    });
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFa5aGHl6buGzr4rxdRM5bzHy7ij7MNxU&callback=initMap&v=weekly"async></script>
+        </section>
+        <section class="addr">
+            <address>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>
+                    (주)미완성, 서울특별시 성동구<br />
+                    성수 2가 3동
+                </p>
+            </address>
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                <span>대표전화 : 02)123-1234</span>
+            </p>
+            <p>사업자 등록번호 : 201-12-12345</p>
+        </section>
+    </div>
+</div>
+
+<script>
+    const pageBack = document.querySelector(".pagePrev");
+    console.log(pageBack);
+    
+    pageBack.addEventListener("click",function(){
+        history.go(-1);
+    });
+    
+</script>
+</body>
+</html>
